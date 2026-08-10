@@ -1,18 +1,9 @@
 ---
 hero:
-    actions:
-        - link: /code
-          text: Code
-          theme: brand
-        - link: /math
-          text: Math
-          theme: brand
-        - link: /404
-          text: "404"
-          theme: alt
     image: /icon/dt.svg
-    name: donetown
-    tagline: done notebook template
-    text: showcases
+    name: CS224N
+    tagline: NLP notebook by done
+    text: Stanford
 layout: home
+title: CS224N
 ---

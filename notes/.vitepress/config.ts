@@ -3,16 +3,6 @@ import { defineConfig } from "vitepress";
 
 const base = process.env.GITHUB_ACTIONS ? "/CS224N/" : "/";
 
-const sidebar = [
-    {
-        items: [
-            { link: "/code", text: "Code" },
-            { link: "/math", text: "Math" },
-        ],
-        text: "Showcases",
-    },
-];
-
 export default defineConfig({
     base,
     description: "NLP notebook by done",
@@ -27,7 +17,6 @@ export default defineConfig({
             quote: "Living is keeping the absurd alive.",
             title: "NOTHINGNESS",
         },
-        sidebar: { "/": sidebar },
         socialLinks: [
             {
                 ariaLabel: "course",
