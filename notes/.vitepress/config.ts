@@ -15,7 +15,7 @@ const sidebar = [
 
 export default defineConfig({
     base,
-    description: "notebook scaffold.",
+    description: "NLP notebook by done",
     head: [["link", { href: `${base}icon/dt.ico`, rel: "icon" }]],
     markdown: { config: (md) => void md.use(katex) },
     srcExclude: ["public/**"],
@@ -28,7 +28,14 @@ export default defineConfig({
             title: "NOTHINGNESS",
         },
         sidebar: { "/": sidebar },
-        socialLinks: [{ icon: "github", link: "https://github.com/onedonedone/donetown" }],
+        socialLinks: [
+            {
+                ariaLabel: "course",
+                icon: "internetarchive",
+                link: "https://web.stanford.edu/class/cs224n/",
+            },
+            { icon: "github", link: "https://github.com/onedonedone/CS224N" },
+        ],
     },
     title: "donetown",
 });
