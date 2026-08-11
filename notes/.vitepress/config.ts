@@ -6,7 +6,7 @@ const base = process.env.GITHUB_ACTIONS ? "/CS224N/" : "/";
 
 export default defineConfig({
     base,
-    description: "notebook scaffold.",
+    description: "NLP notebook by done",
     head: [["link", { href: `${base}icon/dt.ico`, rel: "icon" }]],
     markdown: { config: (md) => void md.use(katex) },
     srcExclude: ["public/**"],
@@ -27,7 +27,14 @@ export default defineConfig({
                 text: "Examples",
             },
         ],
-        socialLinks: [{ icon: "github", link: "https://github.com/onedonedone/donetown" }],
+        socialLinks: [
+            {
+                ariaLabel: "course",
+                icon: "internetarchive",
+                link: "https://web.stanford.edu/class/cs224n/",
+            },
+            { icon: "github", link: "https://github.com/onedonedone/CS224N" },
+        ],
     },
     title: "donetown",
     vite: { plugins: [{ handleHotUpdate: () => void parseCache.clear(), name: "clear-cache" }] },
