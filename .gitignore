@@ -1,0 +1,7 @@
+**/.vitepress/cache
+**/.vitepress/dist
+.env
+.venv/
+/references/
+__pycache__/
+node_modules
