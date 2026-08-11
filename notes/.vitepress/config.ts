@@ -18,15 +18,6 @@ export default defineConfig({
             quote: "Living is keeping the absurd alive.",
             title: "NOTHINGNESS",
         },
-        sidebar: [
-            {
-                items: [
-                    { link: "/code", text: "Code" },
-                    { link: "/math", text: "Math" },
-                ],
-                text: "Examples",
-            },
-        ],
         socialLinks: [
             {
                 ariaLabel: "course",
